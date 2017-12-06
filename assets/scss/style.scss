@@ -1,0 +1,177 @@
+//variables
+$font-hand: 'La Belle Aurore', cursive;
+$font-cursive: 'Lobster', cursive;
+$font-alfa: 'Alfa Slab One', cursive;
+$font-all: 'Barlow Condensed', sans-serif;
+
+//mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*----Accueil----*/
+
+#logo {
+    width: 15vw;
+    height: auto;
+}
+
+header, nav {
+    text-align: center;
+}
+
+.navbar-expand-lg {
+    display: flex;
+    justify-content: center !important;
+    background-color: rgba(233, 236, 239, 0.5) !important;
+}
+
+//Accueil section
+.section-1 {
+    background-image: url("../img/pexels-photo-606540.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+*[class^="col-"] {padding: 0;}
+
+.panel {
+    background-color: transparent;
+    @include border-radius(5px);
+    text-shadow: 2px 2px 2px #000;
+}
+
+.panel-2 .panel-body p {
+    font-family: $font-alfa;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.jumbotron {
+     padding: 0.5rem 0.5rem !important;
+     background-color: rgba(233, 236, 239, 0.5);
+     img {
+         padding: 0;
+         margin: 0
+    }
+}
+
+.btn-reserver {
+    background-image: url("../img/icon--hand.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    background-size: 77px 39px;
+    transition: all .3s ease-in-out;
+    color: #fff !important;
+    font: {
+        family: $font-alfa;
+        size: 2.1em;
+    }
+    
+    &::before {
+        content: '';
+        display: block;
+        
+        position: absolute;
+        top: 17%;
+        left: 30%;
+        height: 2px;
+        width: 0vw;
+        background-color: transparent;
+        
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        -webkit-transition-property: all,left;
+        transition-property: all,left;
+    }
+    
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 17%;
+        right: 70%;
+        height: 2px;
+        width: 0vw;
+        background-color: transparent;
+        
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        -webkit-transition-property: all ,right;
+        transition-property: all, right;
+    }
+    
+    &:hover {
+       background-position: 15px center;
+        
+        &::before {
+            background-color: #fff;
+            width: 10vw;
+            background: -webkit-linear-gradient(left, #fff , transparent); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #fff , transparent); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #fff , transparent); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #fff , transparent); /* Standard syntax (must be last) */
+        }
+        &::after {
+            background-color: #fff;
+            width: 10vw;
+            
+            background: -webkit-linear-gradient(right, #fff , transparent); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(left, #fff , transparent); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(left, #fff , transparent); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to left, #fff , transparent); /* Standard syntax (must be last) */
+        }
+    }
+}
+
+h2 {
+   font-family: $font-hand;
+    color: #e60000;
+    font-size: 3em;
+}
+
+form .form-group input[type='email'] {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: 25vw;
+    
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #fff;
+        text-shadow: 2px 2px 2px #000;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #fff;
+        text-shadow: 2px 2px 2px #000;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #fff;
+        text-shadow: 2px 2px 2px #000;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #fff;
+        text-shadow: 2px 2px 2px #000;
+    }
+}
+
+.form-group {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
