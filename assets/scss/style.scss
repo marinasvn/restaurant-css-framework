@@ -13,6 +13,13 @@ $font-all: 'Barlow Condensed', sans-serif;
           border-radius: $radius;
 }
 
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.container-fluid {
+    padding: 0 !important;
+}
 /*----Accueil----*/
 
 #logo {
@@ -20,7 +27,7 @@ $font-all: 'Barlow Condensed', sans-serif;
     height: auto;
 }
 
-header, nav {
+#header, nav {
     text-align: center;
 }
 
@@ -56,6 +63,7 @@ header, nav {
 .jumbotron {
      padding: 0.5rem 0.5rem !important;
      background-color: rgba(233, 236, 239, 0.5);
+     border-radius: 0 !important;
      img {
          padding: 0;
          margin: 0
@@ -142,6 +150,7 @@ form .form-group input[type='email'] {
     background-color: transparent;
     color: #fff;
     width: 25vw;
+    border-radius: 0 !important;
     
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: #fff;
@@ -164,6 +173,55 @@ form .form-group input[type='email'] {
 .form-group {
     display: flex;
 }
+
+/*--------------------------------------------------*/
+
+//Carte section
+.section-2 {
+    background-image: url("../img/resto.jpeg");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    
+    .opacity {
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    [class^="col-"] {
+        padding: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
