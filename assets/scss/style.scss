@@ -5,6 +5,7 @@ $font-alfa: 'Alfa Slab One', cursive;
 $font-all: 'Barlow Condensed', sans-serif;
 
 $color-red: #e60000;
+$color-gris: #212529;
 
 //mixins
 
@@ -263,7 +264,7 @@ form .form-group input[type='email'] {
 /*-------------GALLERY-------------*/
 
 .section-3 {
-    background-color: #212529;
+    background-color: $color-gris;
     color: #fff;
     border-top: 3px solid $color-red;
     
@@ -319,13 +320,139 @@ form .form-group input[type='email'] {
             border-style: none;
         }
     }
+    
+    .pager {
+        display: flex;
+        justify-content: center;
+        padding: 0 !important;
+        li {
+            list-style: none;
+            padding: 0.5rem 1rem;
+            margin: 2rem 0.5rem;
+            background-color: $color-red;
+            @include border-radius(30px);
+            
+            a {
+                color: #fff;
+                
+                &:hover {
+                    color: $color-gris;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
+/*----------------------resto-----------------------*/
 
+.section-4 {
+    background-color: $color-gris;
+    border-top: 3px solid $color-red;
+    color: #fff;
+    #small-logo {
+        max-width: 15vw;
+        height: auto;
+    }
+    
+    .opening-hours-day {
+        text-align: left;
+        width: 100px;
+        margin-right: 10px;
+    }
+    
+    .opening-hours, .opening-hours-day {
+        display: inline-block;
+        /* width: 120px; */
+        height: 30px;
+        color: #fff;
+        font-family: 'BentonSans', sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
+    
+    .opening-hours-divider {
+        width: 140px;
+        border-bottom: 3px solid #fff;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    
+    .opening-hours {
+        margin-left: 3rem;
+    }
+    
+    .bar-opening-hours {
+        font-family: $font-cursive;
+        color: $color-red;
+    }
+    
+    h3 {
+        font-family: $font-hand;
+    }
+}
 
+/*----------------------contact-----------------------*/
 
-
-
+.section-5 {
+    background-image: url("../img/tomatoes.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-top: 3px solid $color-red;
+    h1 {
+        text-align: center;
+        margin-top: 7rem;
+        font-family: $font-hand;
+        font-size: 3em;
+    }
+    
+    input[type=text], textarea {
+        padding: 12px;
+        border-bottom: 1px dotted $color-red;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: #fff !important;
+    }
+    
+    input:focus, textarea {
+         outline:  none !important;
+    }
+    
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #fff; opacity: 0.7 !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #fff; opacity: 0.7 !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #fff; opacity: 0.7 !important;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #fff; opacity: 0.7 !important;
+    }
+    
+    input[type=submit] {
+        border-bottom: 1px dotted $color-red;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: #fff;
+        font: {
+            family: $font-hand;
+            size: 2em;
+        }
+            &:hover {
+                cursor: pointer;
+                color: $color-red;
+            }
+    }
+}
 
 
 
