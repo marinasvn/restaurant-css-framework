@@ -244,20 +244,23 @@ form .form-group input[type='email']:-moz-placeholder {
   background-color: #212529;
   color: #fff;
   border-top: 3px solid #e60000;
+  /*    #gallery-2 {
+          display: none;
+      }*/
 }
-.section-3 .row {
+.section-3 #gallery-1, .section-3 #gallery-2 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.section-3 .row .portfolio-box {
+.section-3 #gallery-1 .portfolio-box, .section-3 #gallery-2 .portfolio-box {
   position: relative;
   display: block;
   max-width: 650px;
   margin: 0 auto;
 }
-.section-3 .row .portfolio-box .portfolio-box-caption {
+.section-3 #gallery-1 .portfolio-box .portfolio-box-caption, .section-3 #gallery-2 .portfolio-box .portfolio-box-caption {
   position: absolute;
   bottom: 0;
   display: block;
@@ -271,10 +274,10 @@ form .form-group input[type='email']:-moz-placeholder {
   -moz-transition: all .2s;
   transition: all .2s;
 }
-.section-3 .row .portfolio-box .portfolio-box-caption:hover {
+.section-3 #gallery-1 .portfolio-box .portfolio-box-caption:hover, .section-3 #gallery-2 .portfolio-box .portfolio-box-caption:hover {
   opacity: 1;
 }
-.section-3 .row .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+.section-3 #gallery-1 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content, .section-3 #gallery-2 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -305,10 +308,12 @@ form .form-group input[type='email']:-moz-placeholder {
   -ms-border-radius: 30px;
   border-radius: 30px;
 }
-.section-3 .pager li a {
+.section-3 .pager li button {
   color: #fff;
+  background-color: transparent !important;
+  border: none !important;
 }
-.section-3 .pager li a:hover {
+.section-3 .pager li button:hover {
   color: #212529;
   text-decoration: none;
 }

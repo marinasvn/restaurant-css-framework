@@ -269,7 +269,7 @@ form .form-group input[type='email'] {
     border-top: 3px solid $color-red;
     
     
-    .row {
+    #gallery-1, #gallery-2 {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
@@ -332,8 +332,10 @@ form .form-group input[type='email'] {
             background-color: $color-red;
             @include border-radius(30px);
             
-            a {
+            button {
                 color: #fff;
+                background-color: transparent !important;
+                border: none !important;
                 
                 &:hover {
                     color: $color-gris;
@@ -342,6 +344,10 @@ form .form-group input[type='email'] {
             }
         }
     }
+    
+/*    #gallery-2 {
+        display: none;
+    }*/
 }
 
 /*----------------------resto-----------------------*/
