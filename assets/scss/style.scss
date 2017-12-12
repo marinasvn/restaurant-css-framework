@@ -20,7 +20,8 @@ html, body {
     padding: 0 !important;
     margin: 0 !important;
     width: 100%;
-    height: 100%;
+    height: auto;
+    overflow-x: hidden;
 }
 
 .row {
@@ -47,6 +48,7 @@ html, body {
 #logo {
     width: 15vw;
     height: auto;
+    margin: 0 auto;
 }
 
 #header, nav {text-align: center;}
@@ -55,7 +57,15 @@ html, body {
     display: flex;
     justify-content: center !important;
     background-color: rgba(233, 236, 239, 0.5) !important;
+    width: 99vw;
+    z-index: 999;
 }
+
+/*
+#small-nav {
+    padding: 0 !important;
+}
+*/
 
 //Accueil section
 .section-1 {
@@ -537,13 +547,65 @@ form .form-group input[type='email'] {
     }
 }
 
+/*--------------------------------*/
 
+/*
+#menu-toggle {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background: red;
+    z-index: 1;
+}
+*/
 
+/*--------------------------------*/
+						
+#portamento_container {position:absolute; top: 0;} /* take the absolute positioning of the sidebar */
+#portamento_container #nav {}
+#portamento_container #nav.fixed {position:fixed; top: 0 !important;} /* become fixed position, but reset the top and right values */
 
+/*---------------MEDIA QUERIES-----------------*/
 
+@media all and (min-width: 1024px) and (max-width: 1370px) and (orientation: landscape) {
+    #logo {
+        width: 20vw;
+        margin-top: 5vh;
+    }
+    
+    .navbar-expand-lg {
+        background-color: rgba(233, 236, 239, 0.8) !important;
+        width: 99vw;
+        z-index: 1;
+    }
+    #main {
+        margin-top: 5rem;
+    }
+    .panel-2 .panel-body p {
+        font-size: 1.2em;
+    }
+    
+    .opacity {
+        padding-top: 10rem !important;
+    }
+    
+    .popup-gallery {
+        padding-top: 10rem !important;
+    }
+    
+    #resto-margin {
+        padding-top: 10rem !important;
+    }
+    
+    input[type=text], textarea {
+        padding: 15px;
+        border-bottom: 3px dotted $color-red;
+    }
 
-
-
+}
 
 
 
