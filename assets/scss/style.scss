@@ -570,7 +570,7 @@ form .form-group input[type='email'] {
 
 /*---------------MEDIA QUERIES-----------------*/
 
-@media all and (min-width: 1024px) and (max-width: 1370px) and (orientation: landscape) {
+@media all and (min-width: 1280px) and (max-width: 1370px) and (orientation: landscape) {
     #logo {
         width: 20vw;
         margin-top: 5vh;
@@ -604,16 +604,242 @@ form .form-group input[type='email'] {
         padding: 15px;
         border-bottom: 3px dotted $color-red;
     }
+    
+    .section-5 {
+        h1 {margin-top: 10rem !important;}
+    }
 
 }
 
+/*--------------------*/
 
+@media all and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
+    #logo {
+        width: 20vw;
+        margin-top: 5vh;
+    }
+    
+    .navbar-expand-lg {
+        background-color: rgba(233, 236, 239, 0.8) !important;
+        width: 99vw;
+        z-index: 1;
+    }
+    #main {
+        margin-top: 5rem;
+    }
+    .panel-2 .panel-body p {
+        font-size: 1.2em;
+    }
+    
+    .panel-1 {
+        margin-bottom: 0 !important;
+        margin-top: 1rem !important;
+    }
+    
+    .opacity {
+        padding-top: 10rem !important;
+    }
+    
+    .starters {
+        h3 {font-size: 3em;}
+        .desc {font-size: 0.8em;}
+        .menu-carte {width: 80%;}
+    }
+    
+    .prix {font-size: 0.9em;}
+    
+    .popup-gallery {
+        padding-top: 10rem !important;
+    }
+    
+    #resto-margin {
+        padding-top: 0 !important;
+    }
+    
+    .section-4 {
+        .opening-hours-day {
+            width: 80px;
+        }
+        .opening-hours-divider {
+            width: 50px !important;
+        }
+        .opening-hours {
+            margin-left: 1rem !important;
+        }
+    }
+    
+    input[type=text], textarea {
+        padding: 15px;
+        border-bottom: 3px dotted $color-red;
+    }
+    
+    .section-5 {
+        h1 {margin-top: 5rem !important;}
+    }
+}
 
+/*--------------------*/
 
+@media all and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+    #logo {
+        width: 15vw;
+        margin-top: 2vh;
+    }
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: row !important;
+        li {
+            padding: 0 10px;
+            a {
+                padding: 0;
+            }
+        }
+    }
+    .navbar-expand-lg {
+        background-color: rgba(233, 236, 239, 0.8) !important;
+        width: 99vw;
+        z-index: 1;
+    }
+    #main {
+        margin-top: 0 !important;
+        .jumbotron {
+            margin-top: 2rem !important;
+            margin-bottom: 0 !important;
+            width: 35vw;
+            height: auto;
+        }
+    }
+    .panel-body {
+        p {
+            font-size: 0.9em !important;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0;
+        }
+        
+        .form-group {
+            margin-bottom: 0;
+            img {
+                width: 50px;
+                height: 25px !important;
+            }
+            input {
+                padding: 2px !important;
+            }
+        }
+    }
+    
+    .panel-1 {
+        margin-bottom: 0 !important;
+        margin-top: -1rem !important;
+        a {
+            font-size: 1.5em !important;
+            background-size: 50px auto;
+            padding-left: 60px;
+        }
+    }
+    
+    .opacity {
+        padding-top: 0 !important;
+        .row {
+            padding-top: 0 !important;
+        }
+    }
+    
+    .starters {
+        padding-left: 2rem !important;
+        .h3 {font-size: 3em !important;}
+        h3 {font-size: 2em;}
+        .desc {font-size: 0.6em;}
+        .menu-carte {
+            width: 80%;
+            a {
+                font-size: 0.6em !important;
+            }
+        }
+    }
+    
+    .meal-desc {
+        font-size: 0.7em !important;
+    }
+    
+    h4 {
+        font-size: 1em !important;
+    }
+    
+    .prix {font-size: 0.7em;}
+    
+    .popup-gallery {
+        padding-top: 0 !important;
+    }
+    
+    #resto-margin {
+        padding-top: 0 !important;
+    }
+    
+    .pager li {
+        margin: 0 !important;
+        padding: 0.2rem 0.2rem !important;
+        border-radius: 10px !important;
+    }
+    
+    .section-4 {
+        .opening-hours-day {
+            width: 80px;
+            height: 12px;
+            font-size: 0.6em;
+        }
+        .opening-hours-divider {
+            width: 50px !important;
+            height: 12px;
+            font-size: 0.6em;
+        }
+        .opening-hours {
+            margin-left: 1rem !important;
+            height: 12px;
+            font-size: 0.6em;
+        }
+        .bar-opening-hours {
+            font-size: 0.7em;
+            margin-top: 0 !important;
+        }
+        
+        .adresse, .tel, .mail {font-size: 0.8em;}
+        
+    }
+    
+    #map {
+        height: 100px !important;
+    }
+    
+    input[type=text], textarea {
+        margin-top: 1rem !important;
+        padding: 10px;
+        border-bottom: 3px dotted $color-red;
+    }
+    
+    #subject {
+        margin-top: 1rem !important;
+        min-height: 50px !important;
+    }
+    
+    input[type=submit] {
+        border-bottom: 2px dotted #e60000;
+        font-size: 1em;
+        margin-top: 1rem !important;
+    }
+    
+    .section-5 {
+        h1 {
+            margin-top: 2.5rem !important;
+            font-size: 2em;
+        }
+    }
+}
 
-
-
-
+/*----------------------------------*/
 
 
 
