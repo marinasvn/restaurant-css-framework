@@ -1,0 +1,632 @@
+/*---------------------------*/
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden; }
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  height: 100%; }
+
+*[class^="col-"] {
+  padding: 0 !important; }
+
+*[class^="section"] {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 99vw;
+  height: 100vh; }
+
+/*----Accueil----*/
+#logo {
+  width: 15vw;
+  height: auto;
+  margin: 0 auto; }
+
+#header, nav {
+  text-align: center; }
+
+.navbar-expand-lg {
+  border-top: 2px solid #e60000;
+  display: flex;
+  justify-content: center !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  width: 99vw;
+  position: absolute; }
+  .navbar-expand-lg ul li a {
+    color: #fff !important; }
+  .navbar-expand-lg .active {
+    font-weight: bold;
+    border-bottom: 1px dotted #e60000; }
+
+.section-1 {
+  background-image: url("../img/pexels-photo-606540.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.panel {
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 2px 2px 2px #000; }
+
+.panel-2 .panel-body p {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.5em;
+  color: #fff; }
+
+.jumbotron {
+  border: 2px solid #fff;
+  padding: 0 0 !important;
+  background-color: rgba(233, 236, 239, 0.5);
+  border-radius: 0 !important; }
+  .jumbotron img {
+    padding: 0;
+    margin: 0; }
+
+.btn-reserver {
+  background-image: url("../img/icon--hand.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+  background-size: 77px 39px;
+  transition: all .3s ease-in-out;
+  color: #fff !important;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 2.1em; }
+
+h2 {
+  font-family: "La Belle Aurore", cursive;
+  color: #e60000;
+  font-size: 3em; }
+
+form .form-group input[type='email'] {
+  box-shadow: none;
+  border: none;
+  border-left: 2px solid #e60000;
+  background-color: transparent;
+  color: #fff;
+  width: 25vw;
+  border-radius: 0 !important; }
+  form .form-group input[type='email']::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+    text-shadow: 2px 2px 2px #000; }
+  form .form-group input[type='email']::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    text-shadow: 2px 2px 2px #000; }
+  form .form-group input[type='email']:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    text-shadow: 2px 2px 2px #000; }
+  form .form-group input[type='email']:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    text-shadow: 2px 2px 2px #000; }
+
+.form-group {
+  display: flex; }
+
+/*--------------------------------------------------*/
+.section-2 {
+  background-image: url("../img/resto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .section-2 .opacity {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    width: 99vw;
+    height: 100vh; }
+  .section-2 .badge {
+    background-color: #e60000;
+    border-radius: 50%;
+    padding: 7px; }
+  .section-2 .menu-list {
+    padding: 0;
+    list-style: none; }
+  .section-2 .h3 {
+    color: #e60000;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 4em; }
+  .section-2 h3 {
+    margin-top: -1rem;
+    font-family: "Alfa Slab One", cursive;
+    font-size: 4em; }
+  .section-2 .desc {
+    font-family: "Lobster", cursive; }
+  .section-2 h4 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 1.1rem;
+    border-bottom: 1px dotted #e60000; }
+  .section-2 .prix {
+    font-family: "Lobster", cursive;
+    color: #e60000; }
+  .section-2 .menu-carte {
+    border-top: 1px dotted #e60000;
+    padding: 15px 0;
+    width: 70%; }
+    .section-2 .menu-carte li {
+      list-style: none;
+      display: inline; }
+      .section-2 .menu-carte li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.95em;
+        transition: all .5s ease-in-out; }
+        .section-2 .menu-carte li a:hover {
+          text-decoration: line-through;
+          text-decoration-color: #e60000; }
+    .section-2 .menu-carte .red-details {
+      color: #e60000; }
+
+/*-------------GALLERY-------------*/
+.section-3 {
+  background-color: #212529;
+  color: #fff;
+  border-top: 3px solid #e60000; }
+  .section-3 #gallery-1, .section-3 #gallery-2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .section-3 #gallery-1 .img-fluid, .section-3 #gallery-2 .img-fluid {
+      width: 506px !important;
+      height: 275px; }
+    .section-3 #gallery-1 .portfolio-box, .section-3 #gallery-2 .portfolio-box {
+      position: relative;
+      display: block;
+      max-width: 650px;
+      margin: 0 auto; }
+      .section-3 #gallery-1 .portfolio-box .portfolio-box-caption, .section-3 #gallery-2 .portfolio-box .portfolio-box-caption {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        opacity: 0;
+        color: #fff;
+        background: rgba(230, 0, 0, 0.8);
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        transition: all .2s; }
+        .section-3 #gallery-1 .portfolio-box .portfolio-box-caption:hover, .section-3 #gallery-2 .portfolio-box .portfolio-box-caption:hover {
+          opacity: 1; }
+        .section-3 #gallery-1 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content, .section-3 #gallery-2 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          transform: translateY(-50%);
+          text-align: center; }
+  .section-3 a {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s; }
+    .section-3 a img {
+      vertical-align: middle;
+      border-style: none; }
+  .section-3 .pager {
+    display: flex;
+    justify-content: center;
+    padding: 0 !important; }
+    .section-3 .pager li {
+      list-style: none;
+      padding: 0.5rem 1rem;
+      margin: 2rem 0.5rem;
+      background-color: #e60000;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      border-radius: 30px; }
+      .section-3 .pager li button {
+        color: #fff;
+        background-color: transparent !important;
+        border: none !important; }
+        .section-3 .pager li button:hover {
+          color: #212529;
+          text-decoration: none; }
+
+/*--modals--*/
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black; }
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px; }
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer; }
+
+.mySlides {
+  display: none; }
+
+.cursor {
+  cursor: pointer; }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/*----------------------resto-----------------------*/
+.section-4 {
+  background-color: #212529;
+  border-top: 3px solid #e60000;
+  color: #fff; }
+  .section-4 #small-logo {
+    max-width: 15vw;
+    height: auto; }
+  .section-4 .opening-hours-day {
+    text-align: left;
+    width: 100px;
+    margin-right: 10px; }
+  .section-4 .opening-hours, .section-4 .opening-hours-day {
+    display: inline-block;
+    /* width: 120px; */
+    height: 30px;
+    color: #fff;
+    font-family: 'BentonSans', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.8em; }
+  .section-4 .opening-hours-divider {
+    width: 140px;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    margin-bottom: 5px; }
+  .section-4 .opening-hours {
+    margin-left: 3rem; }
+  .section-4 .bar-opening-hours {
+    font-family: "Lobster", cursive;
+    color: #e60000; }
+  .section-4 h3 {
+    font-family: "La Belle Aurore", cursive; }
+
+/*----------------------contact-----------------------*/
+.section-5 {
+  background-image: url("../img/tomatoes.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .section-5 h1 {
+    text-align: center;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 3em; }
+  .section-5 input[type=text], .section-5 textarea {
+    padding: 12px;
+    border-bottom: 1px dotted #e60000;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff !important; }
+  .section-5 input:focus, .section-5 textarea {
+    outline: none !important; }
+  .section-5 ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+    opacity: 0.7 !important; }
+  .section-5 ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    opacity: 0.7 !important; }
+  .section-5 :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    opacity: 0.7 !important; }
+  .section-5 :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    opacity: 0.7 !important; }
+  .section-5 input[type=submit] {
+    border-bottom: 1px dotted #e60000;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2em; }
+    .section-5 input[type=submit]:hover {
+      cursor: pointer;
+      color: #e60000; }
+
+/*--------------------------------*/
+/*
+#menu-toggle {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100vh;
+    background: red;
+    z-index: 1;
+}
+*/
+/*--------------------------------*/
+#portamento_container {
+  position: absolute;
+  top: 0; }
+
+/* take the absolute positioning of the sidebar */
+#portamento_container #nav.fixed {
+  position: fixed;
+  top: 0 !important; }
+
+/* become fixed position, but reset the top and right values */
+/*---------------MEDIA QUERIES-----------------*/
+@media all and (min-width: 1280px) and (max-width: 1370px) and (orientation: landscape) {
+  #logo {
+    width: 20vw;
+    margin-top: 5vh; }
+
+  .navbar-expand-lg {
+    background-color: rgba(233, 236, 239, 0.8) !important;
+    width: 99vw;
+    z-index: 1; }
+
+  #main {
+    margin-top: 5rem; }
+
+  .panel-2 .panel-body p {
+    font-size: 1.2em; }
+
+  .opacity {
+    padding-top: 10rem !important; }
+
+  .popup-gallery {
+    padding-top: 10rem !important; }
+
+  #resto-margin {
+    padding-top: 10rem !important; }
+
+  input[type=text], textarea {
+    padding: 15px;
+    border-bottom: 3px dotted #e60000; }
+
+  .section-5 h1 {
+    margin-top: 10rem !important; } }
+/*--------------------*/
+@media all and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
+  #logo {
+    width: 20vw;
+    margin-top: 5vh; }
+
+  .navbar-expand-lg {
+    background-color: rgba(233, 236, 239, 0.8) !important;
+    width: 99vw;
+    z-index: 1; }
+
+  #main {
+    margin-top: 5rem; }
+
+  .panel-2 .panel-body p {
+    font-size: 1.2em; }
+
+  .panel-1 {
+    margin-bottom: 0 !important;
+    margin-top: 1rem !important; }
+
+  .opacity {
+    padding-top: 10rem !important; }
+
+  .starters h3 {
+    font-size: 3em; }
+  .starters .desc {
+    font-size: 0.8em; }
+  .starters .menu-carte {
+    width: 80%; }
+
+  .prix {
+    font-size: 0.9em; }
+
+  .popup-gallery {
+    padding-top: 10rem !important; }
+
+  #resto-margin {
+    padding-top: 0 !important; }
+
+  .section-4 .opening-hours-day {
+    width: 80px; }
+  .section-4 .opening-hours-divider {
+    width: 50px !important; }
+  .section-4 .opening-hours {
+    margin-left: 1rem !important; }
+
+  input[type=text], textarea {
+    padding: 15px;
+    border-bottom: 3px dotted #e60000; }
+
+  .section-5 h1 {
+    margin-top: 5rem !important; } }
+/*--------------------*/
+@media all and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+  #logo {
+    width: 15vw;
+    margin-top: 2vh; }
+
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important; }
+    .navbar-nav li {
+      padding: 0 10px; }
+      .navbar-nav li a {
+        padding: 0; }
+
+  .navbar-expand-lg {
+    background-color: rgba(233, 236, 239, 0.8) !important;
+    width: 99vw;
+    z-index: 1; }
+
+  #main {
+    margin-top: 0 !important; }
+    #main .jumbotron {
+      margin-top: 2rem !important;
+      margin-bottom: 0 !important;
+      width: 35vw;
+      height: auto; }
+
+  .panel-body p {
+    font-size: 0.9em !important;
+    margin-bottom: 0.5rem; }
+  .panel-body h2 {
+    font-size: 2em;
+    margin-bottom: 0; }
+  .panel-body .form-group {
+    margin-bottom: 0; }
+    .panel-body .form-group img {
+      width: 50px;
+      height: 25px !important; }
+    .panel-body .form-group input {
+      padding: 2px !important; }
+
+  .panel-1 {
+    margin-bottom: 0 !important;
+    margin-top: -1rem !important; }
+    .panel-1 a {
+      font-size: 1.5em !important;
+      background-size: 50px auto;
+      padding-left: 60px; }
+
+  .opacity {
+    padding-top: 0 !important; }
+    .opacity .row {
+      padding-top: 0 !important; }
+
+  .starters {
+    padding-left: 2rem !important; }
+    .starters .h3 {
+      font-size: 3em !important; }
+    .starters h3 {
+      font-size: 2em; }
+    .starters .desc {
+      font-size: 0.6em; }
+    .starters .menu-carte {
+      width: 80%; }
+      .starters .menu-carte a {
+        font-size: 0.6em !important; }
+
+  .meal-desc {
+    font-size: 0.7em !important; }
+
+  h4 {
+    font-size: 1em !important; }
+
+  .prix {
+    font-size: 0.7em; }
+
+  .popup-gallery {
+    padding-top: 0 !important; }
+
+  #resto-margin {
+    padding-top: 0 !important; }
+
+  .pager li {
+    margin: 0 !important;
+    padding: 0.2rem 0.2rem !important;
+    border-radius: 10px !important; }
+
+  .section-4 .opening-hours-day {
+    width: 80px;
+    height: 12px;
+    font-size: 0.6em; }
+  .section-4 .opening-hours-divider {
+    width: 50px !important;
+    height: 12px;
+    font-size: 0.6em; }
+  .section-4 .opening-hours {
+    margin-left: 1rem !important;
+    height: 12px;
+    font-size: 0.6em; }
+  .section-4 .bar-opening-hours {
+    font-size: 0.7em;
+    margin-top: 0 !important; }
+  .section-4 .adresse, .section-4 .tel, .section-4 .mail {
+    font-size: 0.8em; }
+
+  #map {
+    height: 100px !important; }
+
+  input[type=text], textarea {
+    margin-top: 1rem !important;
+    padding: 10px;
+    border-bottom: 3px dotted #e60000; }
+
+  #subject {
+    margin-top: 1rem !important;
+    min-height: 50px !important; }
+
+  input[type=submit] {
+    border-bottom: 2px dotted #e60000;
+    font-size: 1em;
+    margin-top: 1rem !important; }
+
+  .section-5 h1 {
+    margin-top: 2.5rem !important;
+    font-size: 2em; } }
+/*----------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
